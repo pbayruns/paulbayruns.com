@@ -5,9 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dropzone HQ</title>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="libraries/css/bootstrap.css" rel="stylesheet" type="text/css">
-
 <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -18,80 +17,96 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="skyblue">
-<nav class="navbar navbar-default" data-aos="slide-down" data-aos-once="true" data-aos-duration="2000" data-aos-delay="3000">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="about-me.html">Paul Bayruns</a> </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="about-me.html">ABOUT ME</a></li>
-        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="bathroomfinder.php">BATHROOM FINDER</a></li>
-            <li><a href="achievement-viewer.html">ACHIEVEMENT VIEWER</a></li>
-            <li class="active"><a class="active" href="#">DROPZONE HQ</a></li>
-          </ul>
-        </li>
-      </ul>
+<body>
+<div id="dropzonehq-wrapper">
+  <nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container col-sm-12 col-md-8 col-md-offset-2">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">Paul Bayruns</a> </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html">ABOUT ME</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bathroomfinder.php">BATHROOM FINDER</a></li>
+              <li class="active"><a href="achievement-viewer.html" class="active">ACHIEVEMENT VIEWER</a></li>
+              <li><a href="dropzone-HQ.html">DROPZONE HQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container-fluid text-center skyblue" id="dropzone-intro">
-  <h1 class="title-color" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="3000" data-aos-once="true">Dropzone HQ</h1>
-  <br>
-  <img src="img/computers.svg" class="behind-nav img-responsive img-circle center-block slide-down" height="225" width="225"><img>
-  <h3 class="title-color" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="3000" data-aos-once="true">A web-based solution for skydiving dropzone management.</h3>
-  <a href="#moreInfo" class="btn btn-lg btn-transparent btn-default" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000" data-aos-once="true">Learn More</a> 
-  <div style="margin-top: 75%"></div>
-  <img src="img/plane.svg" width="100%" style="filter:flipH" class="rellax" data-rellax-speed="6" data-aos="slide-right" data-aos-once="true">
-  <img src="img/plane.svg" width="100%" class="rellax" data-rellax-speed="1" data-aos="slide-right" data-aos-once="true">
-  <img src="img/phone.svg" class="img-responsive rellax parachute-1" data-rellax-speed="5"  height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-2"  data-rellax-speed="7" height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-3"  data-rellax-speed="5" height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-4"  data-rellax-speed="5" height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-5"  data-rellax-speed="4" height="225" width="225">
-  <img src="img/phone.svg" class="img-responsive rellax parachute-1" data-rellax-speed="2"  height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-2"  data-rellax-speed="4" height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-3"  data-rellax-speed="7" height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-4"  data-rellax-speed="6" height="225" width="225">
-  <img src="img/tablet.svg" class="img-responsive rellax parachute-5"  data-rellax-speed="3" height="225" width="225">
-  </div>
-<div class="fade-in title-color" id="moreInfo">
-  <div id="concept" class="container-fluid text-center dropzone-info-container">
-    <h1 data-aos="fade-up-left" class="dropzone-infobox-title">The Concept</h1>
-    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-centered dropzone-infobox">
-      <h1 data-aos="flip-down"> <i class="ionicons ion-ios-paper-outline"></i> <i class="ionicons ion-arrow-right-a"></i> <i class="ionicons ion-monitor"></i> </h1>
-      <h3 data-aos="fade-up-right"> Currently, many dropzones keep paper records to track instructors’ jumps and parachute repacking. Dropzone HQ seeks to reduce the human error caused by this system while also allowing employees to more quickly view and edit the information they need. On the equipment side, Dropzone HQ will also manage general inventory, gear rentals, gear location, and the gear repair process. As an added bonus, various statistics will be gathered as the system is used, giving valuable insight to owners and managers.</h3>
-    </div>
-  </div>
-  <div id="dropzone-tech" class="container-fluid text-center dropzone-info-container">
-    <h1 data-aos="fade-up-right">The Tech</h1>
-    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-centered dropzone-infobox">
-      <h3 data-aos="fade-up-left"> Dropzone HQ will be a web application with mobile support, built in ReactJS. With its backend based in SQL and Django, DZHQ will provide real time views of data that is critical to the hectic workflow of a busy dropzone. Powered by Amazon Web Services hosting, DZHQ will be scalable to dropzones of various sizes.</h3>
-    </div>
-  </div>
-  <div id="dropzone-team" class="container-fluid text-center dropzone-info-container">
-    <h1 data-aos="fade-up-left">The Team</h1>
-    <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-centered dropzone-infobox">
-      <h3 data-aos="fade-up-right"> This project is being developed by 6 undergraduate seniors at Rowan University: <br><br>
+  </nav>
+  <div class="container-fluid text-center" id="dropzone-intro">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <h1 class="title-color" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500" data-aos-once="true">Dropzone HQ</h1>
+        <br>
+        <img src="img/computers.svg" class="behind-nav img-responsive img-circle center-block slide-down" height="225" width="225"><img>
+        <h3 class="title-color" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500" data-aos-once="true">A web-based solution for skydiving dropzone management.</h3>
+        <a href="#moreInfo" class="btn btn-lg btn-transparent btn-default" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000" data-aos-once="true">Learn More</a>
+        <div style="margin-top: 75%"></div>
+        <img src="img/plane.svg" width="100%" class="rellax" data-rellax-speed="6" data-aos="slide-right"> <img src="img/phone.svg" class="img-responsive rellax parachute-1" data-rellax-speed="5"  height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-2"  data-rellax-speed="7" height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-3"  data-rellax-speed="5" height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-4"  data-rellax-speed="5" height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-5"  data-rellax-speed="4" height="225" width="225"> <img src="img/phone.svg" class="img-responsive rellax parachute-1" data-rellax-speed="2"  height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-2"  data-rellax-speed="4" height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-3"  data-rellax-speed="7" height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-4"  data-rellax-speed="6" height="225" width="225"> <img src="img/tablet.svg" class="img-responsive rellax parachute-5"  data-rellax-speed="3" height="225" width="225"> 
+        </div>
+	  </div>
+     <div class="row" id="moreInfo">
+      <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+      	<div id="concept" class="text-center dropzone-info-container">
+          <h1 class="dropzone-infobox-title">The Concept</h1>
+          <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-centered dropzone-infobox">
+           <h2>Share Information Faster</h2>
+            <h1 > <i class="ionicons ion-ios-paper-outline"></i> <i class="ionicons ion-arrow-right-a"></i> <i class="ionicons ion-monitor"></i> </h1>
+            <h4> Currently, many dropzones track instructors’ jumps and parachute repacking on paper. Dropzone HQ seeks to reduce the human error and slowdown caused by this system, giving employees quicker, more accurate access to the information they need. </h4><br>
 
-        <b>Paul Bayruns <br>
-        Jatin Bhakta <br>
-        Andres Blotta <br>
-        Brian Krick <br>
-        Jon Spratt <br>
-        Paul Turner</b></h3>
+			  <h2>Manage Records</h2><h1><i class="ionicons ion-ios-list-outline"></i> <i class="ionicons ion-arrow-right-a"></i> <i class="ionicons ion-ios-folder-outline"></i></h1><h4>Dropzone HQ will manage general inventory, gear rentals, gear location, and the gear repair process, reducing the hassle and innacurracy of paper records. </h4><br>
+
+         <h2>Provide Insight</h2><h1><i class="ionicons ion-ios-information-outline"></i> <i class="ionicons ion-arrow-right-a"></i> <i class="ionicons ion-stats-bars"></i> </h1><h4>As a bonus to managers and owners, various statistics will be gathered as Dropzone HQ is used, sharing valuable insight on the dropzone's workflow.</h4>
+          </div>
+        </div>
+        
+        <div id="dropzone-tech" class=" dropzone-info-container">
+          <h1>The Tech</h1>
+          
+          <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-centered dropzone-infobox">
+          <h1 ><i class="ionicons ion-code"></i> <i class="ionicons ion-arrow-right-a"></i> <i class="ionicons ion-ios-cloud-outline"></i> </h1>
+			  <h4> Dropzone HQ will be a web application with mobile support, built with:
+         <br>
+<br>
+
+         	ReactJS &amp; Bootstrap frontend<br>
+         	MySQL &amp; Django backend<br>
+         	Amazon Web Services hosting
+         </h4>
+          </div>
+        </div>
+        
+        <div id="dropzone-team" class="text-center dropzone-info-container">
+          <h1>The Team</h1>
+          <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 col-centered dropzone-infobox">
+           <h1><i class="ionicons ion-ios-people-outline"></i> <i class="ionicons ion-arrow-right-a"></i> <i class="ionicons ion-social-github-outline"></i></h1>
+            <h4> This project is being developed by 6 undergraduate seniors at Rowan University: <br>
+              <br>
+              <b>Paul Bayruns <br>
+              Jatin Bhakta <br>
+              Andres Blotta <br>
+              Brian Krick <br>
+              Jon Spratt <br>
+              Paul Turner</b></h4>
+              
+          </div>
+        </div>
+        
+		 </div>
+	  </div>
     </div>
   </div>
-</div>
 <script src="libraries/js/jquery-1.11.3.min.js"></script> 
 <script src="libraries/js/bootstrap.js"></script> 
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
 <script src="libraries/js/jquery.waypoints.min.js"></script> 
-<script src="libraries/js/rellax.min.js"></script>
-<script src="js/scrolling.js"></script>
+<script src="libraries/js/rellax.min.js"></script> 
+<script src="js/scrolling.js"></script> 
 <script>
   // Accepts any class name
   var rellax = new Rellax('.rellax');

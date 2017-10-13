@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-signin-client_id" content="166824050890-c69fisap792n0cqos0rsdicad9sff5k6.apps.googleusercontent.com">
-	<title>index</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+	<title>Bathroomfinder</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="libraries/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 	<script src="libraries/js/jquery-1.11.3.min.js"></script>
@@ -32,31 +32,29 @@
 	<link href="http://elvis.rowan.edu/~bayrunsp9/Images/pin_default.png" rel="shortcut icon"/>
 	<link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
-
-<body id="bathroomfinder-body">
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="about-me.html">Paul Bayruns</a> </div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="about-me.html">ABOUT ME</a>
-					</li>
-					<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li class="active"><a>BATHROOM FINDER</a>
-							</li>
-							<li><a href="achievement-viewer.html">ACHIEVEMENT VIEWER</a>
-							</li>
-							<li><a href="dropzone-HQ.html">DROPZONE HQ</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+<body>
+<div id="bathroomfinder-wrapper">
+	<!--Full site nav -->
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container col-sm-12 col-md-8 col-md-offset-2">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">Paul Bayruns</a> </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html">ABOUT ME</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="active"><a class="active">BATHROOM FINDER</a></li>
+              <li><a href="achievement-viewer.html">ACHIEVEMENT VIEWER</a></li>
+              <li><a href="dropzone-HQ.html">DROPZONE HQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--End nav -->
 	<!-- Disclaimer modal -->
 	<div id="disclaimerModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -118,7 +116,7 @@
 				<h1>Rowan University Bathroomfinder</h1>
 				<h4>Click a mapmarker, then click a bathroom from the popup list to view its info.</h4>
 				<div id="mapViewToggle">
-					<button id="refreshMap" type="button" onClick="initialize()" class="btn btn-info map-button"> <span class="v-centered glyphicon glyphicon-refresh"></span>Refresh Map (clears selection)</button>
+					<button id="refreshMap" type="button" onClick="initialize()" class="btn btn-transparent map-button"> <span class="v-centered glyphicon glyphicon-refresh"></span>Refresh Map (clears selection)</button>
 				</div>
 			</div>
 			<div class="col-xs-8 col-xs-offset-2" id="map_wrapper">
@@ -130,11 +128,15 @@
 				<h3>Filter Options:</h3>
 				<h4>Select some options, then click Filter (On/Off) to apply/remove the filter.</h4>
 				<h6>When a filter is applied, only bathrooms matching the specified criteria are shown. (Changing any options will remove the active filter)</h6>
-				<button id="filterToggle" type="button" onClick="applyFilter()" class="btn btn-info filter-button"> <span class="v-centered glyphicon glyphicon-cog"></span>Filter (On/Off)</button>
-				<button id="clearFilters" type="button" class="btn btn-info filter-button"> <span class="v-centered glyphicon glyphicon-remove-sign"></span>Clear Filter</button>
+				<div id="filter-buttons">
+				<button id="filterToggle" type="button" onClick="applyFilter()" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-cog"></span>Filter (On/Off)</button>
+				<button id="clearFilters" type="button" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-remove-sign"></span>Clear Filter</button>
+				</div>
 			</div>
-			<div class="col-xs-6 col-xs-offset-4 text-left">
-				<label for="buildingFilter">Building:</label>
+			<div class="col-xs-6 col-xs-offset-3">
+			<form>
+			  <div class="input-group">
+					<span class="input-group-addon">Building</span>
 				<select class="selectpicker filterPicker" data-actions-box="true" data-width="auto" data-size="5" data-selected-text-format="count > 2" data-live-search="true" id="buildingFilter" multiple>
 					<option data-tokens="Robinson Hall, Hall, Robinson, Computer Science, CS Lab, Math, Geography">Robinson Hall</option>
 					<option data-tokens="Westby Hall, Westby, Hall, Art, Gallery">Westby Hall</option>
@@ -154,23 +156,26 @@
 					<option data-tokens="Esbjorson Gym, Esbjorson, Gym, Rec, Rec Center, Center, Workout, Swimming, Pool">Esbjorson Gym</option>
 					<option data-tokens="Recreation Center, Recreation, Center, Rec, Rec Center, Gym, Workout, Lifitng, Running, Swimming, Pool">Recreation Center</option>
 				</select>
-				<br>
-				<label for="floorFilter">Floor:</label>
+				</div>
+			  <div class="input-group">
+				<span class="input-group-addon">Floor</span>
 				<select class="selectpicker" data-actions-box="true" data-width="auto" data-size="5" data-selected-text-format="" id="floorFilter" multiple>
 					<option>1</option>
 					<option>2</option>
 					<option>3</option>
 					<option>4</option>
 				</select>
-				<br>
-				<label for="genderFilter">Gender:</label>
+				</div>
+			  <div class="input-group">
+				<span class="input-group-addon">Gender</span>
 				<select class="selectpicker filterPicker" data-actions-box="true" data-width="auto" data-size="5" data-selected-text-format="count > 2" id="genderFilter" multiple>
 					<option>Male</option>
 					<option>Female</option>
 					<option>Gender Neutral</option>
 				</select>
-				<br>
-				<label for="overallRatingFilter">Overall Rating:</label>
+				</div>
+			  <div class="input-group">
+				<span class="input-group-addon">Overall Rating</span>
 				<select class="selectpicker filterPicker" data-actions-box="true" data-width="auto" data-size="5" data-selected-text-format="count > 2" id="overallRatingFilter" multiple>
 					<option>Very High</option>
 					<option>High</option>
@@ -178,17 +183,18 @@
 					<option>Low</option>
 					<option>I REALLY HAVE TO GO</option>
 				</select>
-				<br>
-				<label for="cleanlinessFilter">Cleanliness:</label>
-				<select class="selectpicker filterPicker" data-actions-box="true" data-width="auto" data-size="5" data-selected-text-format="count > 2" id="cleanlinessFilter" multiple>
+				</div>
+				<div class="input-group"><span class="input-group-addon">Cleanliness</span>
+				  <select class="selectpicker filterPicker" data-actions-box="true" data-width="auto" data-size="5" data-selected-text-format="count > 2" id="cleanlinessFilter" multiple>
 					<option>Spotless</option>
 					<option>Clean</option>
 					<option>Average</option>
 					<option>Not Very Clean</option>
 					<option>Disgusting</option>
 				</select>
-				<br>
-				<label for="crowdednessFilter">Crowdedness:</label>
+				</div>
+			  <div class="input-group">
+				<span class="input-group-addon">Crowdedness</span>
 				<select class="selectpicker filterPicker" data-actions-box="true" data-width="auto" data-size="5" data-selected-text-format="count > 2" id="crowdednessFilter" multiple>
 					<option>Very Empty</option>
 					<option>Slightly Empty </option>
@@ -196,7 +202,9 @@
 					<option>Slightly Crowded</option>
 					<option>Very Crowded</option>
 				</select>
+				</div>
 			</div>
+			</form>
 		</div>
 		<!--End options row-->
 		<!--Row for bathroom list-->
@@ -217,6 +225,7 @@
 			<!--End BR list col -->
 		</div>
 		<!--End BR list row-->
+	</div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function() 

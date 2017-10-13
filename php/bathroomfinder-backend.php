@@ -11,6 +11,9 @@ function initConnection() {
 		return $_SESSION[ "connection" ];
 	}
 	/*** mysql server login info ***/
+	
+	
+	
 	$hostname = 'localhost';
 	$username = 'root';
 	$password = '';
