@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-signin-client_id" content="166824050890-c69fisap792n0cqos0rsdicad9sff5k6.apps.googleusercontent.com">
 	<title>Bathroomfinder</title>
+	<link href="./img/my head.svg" rel="shortcut icon"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="libraries/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
@@ -29,7 +30,6 @@
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script src="js/googleMap.js"></script>
 	<script src="js/guiScripts.js"></script>
-	<link href="http://elvis.rowan.edu/~bayrunsp9/Images/pin_default.png" rel="shortcut icon"/>
 	<link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>

@@ -240,19 +240,38 @@ h3 {
 	padding-bottom: 50px;
 }
 .project-img{
+	vertical-align: bottom;
+	margin-bottom: 15px;
 	border-radius: 50%;
 	border: solid 0px #FFF;
-	padding: 15px;
 	animation: 
-    border-animation-out 0.25s ease-in;
+    border-animation-out 0.1s ease-in;
 }
 .project-text{
 	vertical-align: middle;
 }
+
+#achievement-viewer-techstack{
+	border-top: 2px solid #FFF;
+	padding-top: 10px;
+	color: #BCBCBC;
+}
+
+#bathroomfinder-techstack{
+	border-top: 2px solid #FFF;
+	padding-top: 10px;
+	color: #C8EAFF;
+	
+}
+#dropzonehq-techstack{
+	border-top: 2px solid #FFF;
+	padding-top: 10px;
+	color: #FFCFCF;
+}
 .project-img:hover{
 	border: solid 5px #FFF;
 	animation: 
-    border-animation-in 0.25s ease-in;
+    border-animation-in 0.1s ease-in;
 }
 @keyframes border-animation-in {
   0% { 
@@ -276,7 +295,7 @@ h3 {
 }
 #bathroomfinder-project {
 	background-color: #058ed9;
-	color: #000;
+	color: #FFF;
 }
 #dropzonehq-project {
 	background-color: #FE4A49;
@@ -337,20 +356,102 @@ h3 {
 	text-align: center;
 	color: #FFF;
 }
-.progress {
-	height: 50px;
-	text-align: center;
+/***********SVG Bars for skillset*******/
+#libraries{
+	margin-top: 25px;
+	margin-bottom: 75px;
 }
-.progress-bar {
-	background-color: #000;
-	padding: 15px;
+.progress-display-title{
+	margin-bottom: 50px;
 }
-.progress-current-exp{
-	background-color: #29BF12;
+.progress-title{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 20px;
 }
-.progress-future-exp{
-	background-color: #058ed9;
+.progress{
+    height: 20px;
+    background: #cbcbcb;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 45px;
+    overflow: visible;
 }
+.progress .progress-bar{
+    box-shadow: none;
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:after{
+    content: "";
+    display: block;
+    border: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+.progress .progress-value{
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+/****BLUE PROGRESS BAR**/
+
+.progress-display{
+	margin-top: 10px;
+	border: 2px solid #FFF;
+	padding: 10px 25px 10px 25px;
+	border-radius: 15px;
+	background-color: #0F0F0F;
+}
+.progress-bar.blue{
+	background: #058ED9;
+}
+.progress.blue .progress-bar:after{
+    border-bottom-color: #058ED9;
+}
+/****GREEN PROGRESS BAR**/
+.progress-bar.green{
+	background: #85dc6b;
+}
+.progress.green .progress-bar:after{
+    border-bottom-color: #85dc6b;
+}
+/****MINT PROGRESS BAR**/
+.progress-bar.mint{
+	background: #59C9A5;
+}
+.progress.mint .progress-bar:after{
+    border-bottom-color: #59C9A5;
+}
+/****PINK PROGRESS BAR**/
+.progress-bar.pink{
+	background: #D81E5B;
+}
+.progress.pink .progress-bar:after{
+    border-bottom-color: #D81E5B;
+}
+/****YELLOW PROGRESS BAR**/
+.progress-bar.yellow{
+	background: #FFBC42;
+}
+.progress.yellow .progress-bar:after{
+    border-bottom-color: #FFBC42;
+}
+
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}
+/****************************/
+
 #steam-title {
 	background-color: #0F1C30;
 	overflow: hidden;
