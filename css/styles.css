@@ -1,37 +1,90 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*
+*********************************
+*********************************
+***HTML ELEMENTS AND FONT SIZE***
+*********************************
+*********************************
+*/
+html {
+	overflow-x: hidden;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+h1 {
+	font-size: 50px;
+}
+html {
+	font-size: 14px;
+}
 
-.fa {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-right: 25px;
-	margin-left: 25px;
-	color: #FFF;
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+h3 {
+	font-size: 1.5em; /* 1.5x default size */
 }
-#about-me-icons {
-	border: 3px solid #000;
-	border-radius: 25px;
-	display: inline-block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #000;
-	margin-top: 25px;
-	margin-bottom: 25px;
 }
-#wrapper {
-	font-family: "Open Sans", "sans-serif";
-}
-#steam-page{
-		font-family: "Open Sans", "sans-serif";
-	color: #FFF;
 
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+h3 {
+	font-size: 1.4em; /* 1.2x default size */
+}
+}
+
+@media all and (max-width: 500px) { /* screen size until 500px */
+h3 {
+	font-size: 1.2em; /* 0.8x default size */
+}
 }
 
 /*
-***********************
-***TRANSPARENT BUTTONS*
-***********************
+*********************************
+*********************************
+*******NAV BAR***
+*********************************
+*********************************
+*/
+.navbar-custom {
+	background-color: #000;
+	border-radius: 0;
+	font-size: 12px;
+	font-weight: 700;
+	color: #FFF;
+}
+.navbar-custom .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar-custom .navbar-nav > .active > a {
+	color: #000;
+	background-color: #FFF;
+}
+.navbar-custom .navbar-nav > li > a:hover, 
+.navbar-custom .navbar-nav > li > a:focus, 
+.navbar-custom .navbar-nav > .active > a:hover, 
+.navbar-custom .navbar-nav > .active > a:focus, 
+.navbar-custom .navbar-nav > .open >a {
+	text-decoration: none;
+	color: #000;
+	background-color: #FFF;
+}
+.navbar-custom .navbar-brand {
+	color: #FFF;
+}
+.navbar-custom .navbar-toggle {
+	background-color: #FFF;
+}
+.navbar-custom .icon-bar {
+	background-color: #000;
+}
+/*
+*********************************
+*********************************
+*******TRANSPARENT BUTTONS***
+*********************************
+*********************************
 */
 .btn-transparent {
 	background: transparent;
@@ -52,32 +105,138 @@
 	background-color: #FFF;
 	border: 1px solid #fff;
 }
-.equal {
-	display: flex;
-	display: -webkit-flex;
-	flex-wrap: wrap;
+.btn-transparent:focus {
+	color: #058ED9;
+	background-color: #F0F0F0;
+	border: 1px solid #fff;
 }
-.title-color {
-	color: #ECF0F1;
+/*
+*********************************
+*********************************
+*******INDEX . HTML PAGE ***
+*********************************
+*********************************
+*/
+#wrapper {
+	font-family: "Open Sans", "sans-serif";
 }
-.hidden {
-	display: none;
+/************INTRO************/
+#nav-buttons {
+	padding-top: 10px;
 }
-.slide-down {
-	transition-timing-function: ease-in-out;
-	animation: slide-down 7s;
-	margin-top: 0px;
+#intro {
+	background-color: #058ED9;
+	padding-top: 100px;
+	padding-bottom: 200px;
+}
+.intro-button {
+	margin: 5px;
+}
+/**********ABOUT ME**********/
+#about-me {
+	background-color: #FFF;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #000;
+}
+#about-me-icons {
+	border: 3px solid #000;
+	border-radius: 25px;
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #000;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+/**********PROJECTS**********/
+#projects {
+	background-color: #0F1C30;
+	padding-top: 50px;
+	min-height: 95vh;
+}
+.project-title {
+	border: 3px solid;
+	display: inline-block;
+	border-radius: 10px;
+}
+.project-row {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.project-img {
+	vertical-align: bottom;
+	margin-bottom: 15px;
+	border-radius: 50%;
+	border: solid 0px #FFF;
+	animation: border-animation-out 0.1s ease-in;
+}
+.project-text {
+	vertical-align: middle;
+}
+#achievement-viewer-techstack {
+	border-top: 2px solid #FFF;
+	padding-top: 10px;
+	color: #BCBCBC;
+}
+#bathroomfinder-techstack {
+	border-top: 2px solid #FFF;
+	padding-top: 10px;
+	color: #C8EAFF;
+}
+#dropzonehq-techstack {
+	border-top: 2px solid #FFF;
+	padding-top: 10px;
+	color: #FFCFCF;
+}
+.project-img:hover {
+	border: solid 5px #FFF;
+	animation: border-animation-in 0.1s ease-in;
+}
+
+#steam-achievement-project {
+	background-color: #0F1C30;
+	color: #FFF;
+}
+#bathroomfinder-project {
+	background-color: #058ed9;
+	color: #FFF;
+}
+#dropzonehq-project {
+	background-color: #FE4A49;
+	color: #FFF;
+}
+/**********ANIMATIONS**********/
+#animations {
+	background-color: #7DDF64;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #000;
+}
+#player {
+	margin: auto;
+}
+#skills {
+	background-color: #090809;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #FFF;
+}
+
+/*
+*********************************
+*********************************
+*******DROPZONE HQ PAGE ***
+*********************************
+*********************************
+*/
+#dropzonehq-wrapper {
+	background-color: #058ed9;
+	font-family: "Open Sans", "sans-serif";
 }
 #dropzone-intro {
 	padding-bottom: 75px;
 	padding-top: 75px;
-}
-/******
-DROPZONE HQ PAGE
-*/
-#dropzonehq-wrapper{
-	background-color: #058ed9;
-	font-family: "Open Sans", "sans-serif";
 }
 .dropzone-infobox {
 	border-radius: 15px;
@@ -107,6 +266,33 @@ DROPZONE HQ PAGE
 }
 .parachute-5 {
 	margin-left: 80%;
+}
+/*
+*********************************
+*********************************
+*******CSS ANIMATIONS ***
+*********************************
+*********************************
+*/
+.slide-down {
+	transition-timing-function: ease-in-out;
+	animation: slide-down 7s;
+	margin-top: 0px;
+}
+.fade-in {
+	opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5.5s;
+	animation-delay: 5.5s;
 }
  @keyframes slide-down {
  from {
@@ -140,209 +326,69 @@ to {
 opacity:1;
 }
 }
-.fade-in {
-	opacity: 0;
-	-webkit-animation: fadeIn ease-in 1;
-	-moz-animation: fadeIn ease-in 1;
-	animation: fadeIn ease-in 1;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	animation-fill-mode: forwards;
-	-webkit-animation-duration: 1s;
-	-moz-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-delay: 5s;
-	-moz-animation-delay: 5.5s;
-	animation-delay: 5.5s;
+
+@keyframes border-animation-in {
+ 0% {
+ border-width: 0px;
+}
+ 100% {
+ border-width: 5px;
+}
+}
+@keyframes border-animation-out {
+ 0% {
+ border-width: 5px;
+}
+ 100% {
+ border-width: 0px;
+}
+}
+/******************************/
+
+.fa {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 25px;
+	margin-left: 25px;
+	color: #FFF;
+}
+
+
+
+
+
+.equal {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+}
+.title-color {
+	color: #ECF0F1;
+}
+.hidden {
+	display: none;
 }
 /**************************************************/
 
-html {
-	overflow-x: hidden;
-}
-body {
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-h1 {
-	font-size: 50px;
-}
-html {
-	font-size: 14px;
-}
-
-@media all and (max-width: 1200px) { /* screen size until 1200px */
-h3 {
-	font-size: 1.5em; /* 1.5x default size */
-}
-}
-
-@media all and (max-width: 1000px) { /* screen size until 1000px */
-h3 {
-	font-size: 1.4em; /* 1.2x default size */
-}
-}
-
-@media all and (max-width: 500px) { /* screen size until 500px */
-h3 {
-	font-size: 1.2em; /* 0.8x default size */
-}
-}
-#nav-buttons {
-	padding-top: 10px;
-}
-#intro {
-	background-color: #058ED9;
-	padding-top: 100px;
-	padding-bottom: 200px;
-}
-.intro-button{
-	margin:5px;
-}
-#bathroomfinder-wrapper{
-	font-family: "Open Sans", "sans-serif";
-}
-#bathroomfinder-intro {
-	background-color: #78B2D0;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-#about-me {
-	background-color: #FFF;
-	padding-top: 50px;
-	padding-bottom: 100px;
-	color: #000;
-}
-
-.input-group{
-      width: 100%;
-  }
-  .input-group-addon{
-      width: 20%;
-      text-align: left;
-  }
-  .form-control {
-      width: 80%;
-  }
 
 
-#projects {
-	background-color: #0F1C30;
-	padding-top: 50px;
+
+
+.input-group {
+	width: 100%;
 }
-.project-title{
-	border: 3px solid;
-	display: inline-block;
-	border-radius: 10px;
+.input-group-addon {
+	width: 20%;
+	text-align: left;
 }
-.project-row{
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-.project-img{
-	vertical-align: bottom;
-	margin-bottom: 15px;
-	border-radius: 50%;
-	border: solid 0px #FFF;
-	animation: 
-    border-animation-out 0.1s ease-in;
-}
-.project-text{
-	vertical-align: middle;
+.form-control {
+	width: 80%;
 }
 
-#achievement-viewer-techstack{
-	border-top: 2px solid #FFF;
-	padding-top: 10px;
-	color: #BCBCBC;
-}
 
-#bathroomfinder-techstack{
-	border-top: 2px solid #FFF;
-	padding-top: 10px;
-	color: #C8EAFF;
-	
-}
-#dropzonehq-techstack{
-	border-top: 2px solid #FFF;
-	padding-top: 10px;
-	color: #FFCFCF;
-}
-.project-img:hover{
-	border: solid 5px #FFF;
-	animation: 
-    border-animation-in 0.1s ease-in;
-}
-@keyframes border-animation-in {
-  0% { 
-    border-width: 0px;
-  }
-  100% { 
-    border-width: 5px;
-  }
-}
-@keyframes border-animation-out {
-  0% { 
-    border-width: 5px;
-  }
-  100% { 
-    border-width: 0px;
-  }
-}
-#steam-achievement-project {
-	background-color: #0F1C30;
-	color: #FFF;
-}
-#bathroomfinder-project {
-	background-color: #058ed9;
-	color: #FFF;
-}
-#dropzonehq-project {
-	background-color: #FE4A49;
-	color: #FFF;
-}
-#animations {
-	background-color: #7DDF64;
-	padding-top: 50px;
-	padding-bottom: 100px;
-	color: #000;
-}
-#skills {
-	background-color: #090809;
-	padding-top: 50px;
-	padding-bottom: 100px;
-	color: #FFF;
-}
+
 .about-me-panel {
 	background-color: #EF7442
-}
-.navbar-custom {
-	background-color: #000;
-	border-radius: 0;
-	font-size: 12px;
-	font-weight: 700;
-	color: #FFF;
-}
-.navbar-custom .navbar-nav > li > a {
-	color: #fff;
-}
-.navbar-custom .navbar-nav > .active > a {
-	color: #000;
-	background-color: #FFF;
-}
-.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus, .navbar-custom .navbar-nav > .open >a {
-	text-decoration: none;
-	color: #000;
-	background-color: #FFF;
-}
-.navbar-custom .navbar-brand {
-	color: #FFF;
-}
-.navbar-custom .navbar-toggle {
-	background-color: #FFF;
-}
-.navbar-custom .icon-bar {
-	background-color: #000;
 }
 .panel-group {
 	font-size: 30px;
@@ -351,130 +397,35 @@ h3 {
 	float: none;
 	margin: 0 auto;
 }
-.massive-font {
-	font-size: 30px;
-	text-align: center;
+/*
+*********************************
+*********************************
+*******ACHIEVEMENT VIEWER PAGE **
+*********************************
+*********************************
+*/
+#steam-page {
+	font-family: "Open Sans", "sans-serif";
 	color: #FFF;
 }
-/***********SVG Bars for skillset*******/
-#libraries{
-	margin-top: 25px;
-	margin-bottom: 75px;
-}
-.progress-display-title{
-	margin-bottom: 50px;
-}
-.progress-title{
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 0 0 20px;
-}
-.progress{
-    height: 20px;
-    background: #cbcbcb;
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 45px;
-    overflow: visible;
-}
-.progress .progress-bar{
-    box-shadow: none;
-    position: relative;
-    -webkit-animation: animate-positive 2s;
-    animation: animate-positive 2s;
-}
-.progress .progress-bar:after{
-    content: "";
-    display: block;
-    border: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-}
-.progress .progress-value{
-    font-size: 2em;
-    font-weight: bold;
-    position: absolute;
-    top: -30px;
-    right: 0;
-}
-/****BLUE PROGRESS BAR**/
-
-.progress-display{
-	margin-top: 10px;
-	border: 2px solid #FFF;
-	padding: 10px 25px 10px 25px;
-	border-radius: 15px;
-	background-color: #0F0F0F;
-}
-.progress-bar.blue{
-	background: #058ED9;
-}
-.progress.blue .progress-bar:after{
-    border-bottom-color: #058ED9;
-}
-/****GREEN PROGRESS BAR**/
-.progress-bar.green{
-	background: #85dc6b;
-}
-.progress.green .progress-bar:after{
-    border-bottom-color: #85dc6b;
-}
-/****MINT PROGRESS BAR**/
-.progress-bar.mint{
-	background: #59C9A5;
-}
-.progress.mint .progress-bar:after{
-    border-bottom-color: #59C9A5;
-}
-/****PINK PROGRESS BAR**/
-.progress-bar.pink{
-	background: #D81E5B;
-}
-.progress.pink .progress-bar:after{
-    border-bottom-color: #D81E5B;
-}
-/****YELLOW PROGRESS BAR**/
-.progress-bar.yellow{
-	background: #FFBC42;
-}
-.progress.yellow .progress-bar:after{
-    border-bottom-color: #FFBC42;
-}
-
-
-@-webkit-keyframes animate-positive{
-    0% { width: 0; }
-}
-@keyframes animate-positive{
-    0% { width: 0; }
-}
-/****************************/
-
 #steam-title {
 	background-color: #0F1C30;
 	overflow: hidden;
 }
-
-#steam-title-text{
+#steam-title-text {
 	padding-top: 50px;
 	color: #FFF;
 	align-self: center;
 }
-
-#steam-title-img{
+#steam-title-img {
 	margin: 25px;
 }
-
-.float-left{
+.float-left {
 	float: left;
 }
-.float-right{
+.float-right {
 	float: right;
 }
-
-
 #chartjs-tooltip {
 	opacity: 0;
 	position: absolute;
@@ -491,14 +442,13 @@ h3 {
 #chartjs-tooltip > img {
 	height: 1em;
 }
-#query-box{
+#query-box {
 	background-color: #0f1c30;
 	color: #FFF;
 	font-family: "Open Sans", "sans serif";
 	border-radius: 10px;
 }
-
-#show-achievements:hover{
+#show-achievements:hover {
 	color: #0f1c30;
 }
 #achievement-description {
@@ -521,23 +471,32 @@ h3 {
 #achievement-infobox h3 {
 	padding-bottom: 10px;
 }
-
-
-
 .tt-query, /* UPDATE: newer versions use tt-input instead of tt-query */ .tt-hint, .tt-input {
 	width: 100%;
-	
 	padding: 8px 12px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
 	outline: none;
 }
-
 .tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
 	width: 100%;
-	
 }
 
+/*
+*********************************
+*********************************
+*******BATHROOMFINDER PAGE ***
+*********************************
+*********************************
+*/
+#bathroomfinder-wrapper {
+	font-family: "Open Sans", "sans-serif";
+}
+#bathroomfinder-intro {
+	background-color: #78B2D0;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 #mapDisplay {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -545,8 +504,7 @@ h3 {
 	background-color: #058ed9;
 	color: #FFF;
 }
-
-.map-button:hover{
+.map-button:hover {
 	color: #058ed9;
 }
 #mapViewToggle {
@@ -567,12 +525,14 @@ h3 {
 	background-color: #000;
 	color: #FFF;
 }
-
-#filter-buttons{
+#filter-buttons {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.filter-button:hover{
+.filter-button:hover {
+	color: #000;
+}
+.filter-button:focus {
 	color: #000;
 }
 #bathroomList {
@@ -599,7 +559,6 @@ tr:hover {
 	background-color: #FAFAFF;
 	color: #31393C;
 }
-
 .panel-heading span {
 	margin-top: -20px;
 	font-size: 15px;

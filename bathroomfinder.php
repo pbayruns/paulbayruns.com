@@ -28,8 +28,7 @@
 	<!--<script src="/~bayrunsp9/boostrap_plugins/tablesorter.min.js" type="text/javascript"></script>-->
 	<script type="text/javascript" src="/libraries/js/jquery.tablesorter.min.js"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<script src="js/googleMap.js"></script>
-	<script src="js/guiScripts.js"></script>
+	<script src="js/bathroomfinder.js"></script>
 	<link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -125,12 +124,10 @@
 		</div>
 		<div class="row text-center" id="filterOptions">
 			<div class="col-xs-10 col-xs-offset-1">
-				<h3>Filter Options:</h3>
-				<h4>Select some options, then click Filter (On/Off) to apply/remove the filter.</h4>
-				<h6>When a filter is applied, only bathrooms matching the specified criteria are shown. (Changing any options will remove the active filter)</h6>
+				<h3>Filter Bathrooms</h3>
 				<div id="filter-buttons">
-				<button id="filterToggle" type="button" onClick="applyFilter()" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-cog"></span>Filter (On/Off)</button>
-				<button id="clearFilters" type="button" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-remove-sign"></span>Clear Filter</button>
+				<button id="filterToggle" type="button" onClick="applyFilter()" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-cog"></span>Apply Filters</button>
+				<button id="clearFilters" type="button" onClick="clearFilter()" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-remove-sign"></span>Clear Filters</button>
 				</div>
 			</div>
 			<div class="col-xs-6 col-xs-offset-3">

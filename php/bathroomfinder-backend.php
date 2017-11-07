@@ -11,11 +11,11 @@ function initConnection() {
 		return $_SESSION[ "connection" ];
 	}
 	/*** mysql server login info ***/
-	if(isset($_ENV[RDS_HOSTNAME])){
-		$hostname = $_ENV[RDS_HOSTNAME];
-		$username = $_ENV[RDS_USERNAME];
-		$password = $_ENV[RDS_PASSWORD];
-		$dbname = $_ENV[RDS_DB_NAME];
+	if(isset($_ENV["RDS_HOSTNAME"])){
+		$hostname = $_ENV["RDS_HOSTNAME"];
+		$username = $_ENV["RDS_USERNAME"];
+		$password = $_ENV["RDS_PASSWORD"];
+		$dbname = $_ENV["RDS_DB_NAME"];
 	}else{
 		$hostname = 'localhost';
 		$username = 'root';

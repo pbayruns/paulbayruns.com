@@ -52,7 +52,7 @@ $('a[href*="#"]')
     }
   });
 
- $(".progress-element").each(function() {
+ $(".progress-bar").each(function() {
 	 "use strict";
       $(this).waypoint(function() {
       var progressBar = $(".progress-bar");

@@ -9,7 +9,7 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="libraries/css/slick.css"/>
+<link rel="stylesheet" href="https://cdn.plyr.io/2.0.16/plyr.css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,199 +20,96 @@
 </head>
 <body>
 <div id="wrapper">
-    <nav class="navbar navbar-custom navbar-fixed-top">
-        <div class="container col-sm-12 col-md-8 col-md-offset-2">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="index.html">Paul Bayruns</a> </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a class="active">ABOUT ME</a></li>
-                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="bathroomfinder.php">BATHROOM FINDER</a></li>
-                            <li><a href="achievement-viewer.html">ACHIEVEMENT VIEWER</a></li>
-                            <li><a href="dropzone-HQ.html">DROPZONE HQ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid text-center" id="intro">
-        <div class="col-sm-12 col-md-6 col-md-offset-3">
-            <h1 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Paul Bayruns</h1>
-            <br>
-            <img src="img/my head.svg" class="img-circle center-block" height="225px" width="225px" data-aos="fade-left" data-aos-duration="2000"><img>
-            <h3 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Rowan University</h3>
-            <div class="col-xs-12" id="nav-buttons" data-aos="fade-up" data-aos-once="true"> <a href="#about-me" class="intro-button btn btn-lg btn-transparent">About Me</a> <a href="#skills" class="intro-button btn btn-lg btn-transparent">Web Skillset</a> <a href="#projects" class="intro-button btn btn-lg btn-transparent">Projects</a> <a href="#animations" class="intro-button btn btn-lg btn-transparent">Animations</a> </div>
-        </div>
+  <nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container col-sm-12 col-md-8 col-md-offset-2">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">Paul Bayruns</a> </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a class="active">ABOUT ME</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bathroomfinder.php">BATHROOM FINDER</a></li>
+              <li><a href="achievement-viewer.html">ACHIEVEMENT VIEWER</a></li>
+              <li><a href="dropzone-HQ.html">DROPZONE HQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="container-fluid text-center" id="about-me">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-            <h1 data-aos="fade-down">About Me</h1>
-            <div class="col-xs-12  col-centered" data-aos="slide-up">
-                <h3> I'm a senior computer science major at Rowan University with an interest in full stack web development, web design, animation, and photography. </h3>
-                <div id="about-me-icons"><i class="fa fa-code fa-3x"></i> <i class="fa fa-database fa-3x"></i> <i class="fa fa-desktop fa-3x"></i><i class="fa fa-paint-brush fa-3x"></i><i class="fa fa-camera fa-3x"></i></div>
-                <h3>As secretary for The Rowan Arts Collective and senator for the Rowan ACM chapter, I enjoy the balance of web development's creative and technical aspects. </h3>
-                <br>
-            </div>
-        </div>
+  </nav>
+  <div class="container-fluid text-center" id="intro">
+    <div class="col-sm-12 col-md-6 col-md-offset-3">
+      <h1 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Paul Bayruns</h1>
+      <br>
+      <img src="img/my head.svg" class="img-circle center-block" height="225px" width="225px" data-aos="fade-left" data-aos-duration="2000"><img>
+      <h3 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Rowan University</h3>
+      <div class="col-xs-12" id="nav-buttons" data-aos="fade-up" data-aos-once="true"> <a href="#about-me" class="intro-button btn btn-lg btn-transparent">About Me</a> <a href="#skills" class="intro-button btn btn-lg btn-transparent">Web Skillset</a> <a href="#projects" class="intro-button btn btn-lg btn-transparent">Projects</a> <a href="#animations" class="intro-button btn btn-lg btn-transparent">Animations</a> </div>
     </div>
-    <div class="container-fluid text-center" id="projects">
-        <h1 class="title-color">Projects</h1>
-        <div class="row project-row" id="steam-achievement-project">
-            <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./achievement-viewer.html"> <img class="project-img" src="img/Steam_icon_logo.svg" width="100%"> </a> </div>
-                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-6">
-                    <div class="project-text text-left"> <a href="./achievement-viewer.html" class="btn btn-lg btn-transparent">Steam Achievements Viewer</a>
-                        <h4>A visualization of steam achievements that utilizes Valve's API to access and display achievement data. </h4>
-                        <h4 id="achievement-viewer-techstack">Created using <b>Bootstrap, JQuery, and PHP.</b></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row project-row" id="bathroomfinder-project" >
-            <div data-aos-anchor-placement="top-bottom" data-aos="slide-left" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                <div class="row">
-                    <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-push-8 col-sm-offset-0 col-lg-push-6"> <a href="./bathroomfinder.php"> <img class="project-img" src="img/toilet-paper.svg" width="100%"> </a> </div>
-                    <div class="col-xs-12 col-sm-8 col-sm-pull-3 col-lg-6">
-                        <div class="project-text text-right"> <a href="./bathroomfinder.php" class="btn btn-lg btn-transparent">BathroomFinder</a>
-                            <h4>A website that displays a google maps view of all bathrooms on Rowan's Glassboro campus, among other features. Includes support for signing in, rating bathrooms, and leaving comments. </h4>
-                            <h4 id="bathroomfinder-techstack">Made possible by <b>Bootstrap, MySQL, PHP, and JQuery.</b></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row project-row" id="dropzonehq-project" >
-            <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./dropzone-HQ.html"><img class="project-img" src="img/parachute.svg" href="dropzone-HQ.html" width="100%"></a> </div>
-                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-6">
-                    <div class="project-text text-left"> <a href="./dropzone-HQ.html" class="btn btn-lg btn-transparent">Dropzone HQ</a>
-                        <h4>A web application for management of employees, inventory, and repairs at skydiving dropzones. In development as my undergraduate senior project. </h4>
-                        <h4 id="dropzonehq-techstack">Built with <b>ReactJS, MySQL, AWS, and Django.</b></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="container-fluid text-center" id="about-me">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+      <h1 data-aos="fade-down">About Me</h1>
+      <div class="col-xs-12  col-centered" data-aos="slide-up">
+        <h3> I'm a senior computer science major at Rowan University with an interest in full stack web development, web design, animation, and photography. </h3>
+        <div id="about-me-icons"><i class="fa fa-code fa-3x"></i> <i class="fa fa-database fa-3x"></i> <i class="fa fa-desktop fa-3x"></i><i class="fa fa-paint-brush fa-3x"></i><i class="fa fa-camera fa-3x"></i></div>
+        <h3>As secretary for The Rowan Arts Collective and senator for the Rowan ACM chapter, I enjoy the balance of web development's creative and technical aspects. </h3>
+        <br>
+      </div>
     </div>
-    <div class="container-fluid text-center" id="skills">
-        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-            <h1 data-aos="flip-down">Web Skillset</h1>
-            <div id="languages" class="col-xs-10 col-xs-offset-1" data-aos="fade-up" data-aos-once="true">
-                <div class="progress-display">
-                    <h2 class="progress-display-title">Languages</h2>
-                    <h3 class="progress-title"></h3>
-                    <div class="progress pink">
-                        <div class="progress-bar pink" style="width:50%">
-                            <div class="progress-value">PHP</div>
-                        </div>
-                    </div>
-                    <h3 class="progress-title"></h3>
-                    <div class="progress mint">
-                        <div class="progress-bar mint" style="width:65%">
-                            <div class="progress-value">SQL</div>
-                        </div>
-                    </div>
-                    <h3 class="progress-title"></h3>
-                    <div class="progress yellow">
-                        <div class="progress-bar yellow" style="width:75%">
-                            <div class="progress-value">JS</div>
-                        </div>
-                    </div>
-                    <h3 class="progress-title"></h3>
-                    <div class="progress green">
-                        <div class="progress-bar green" style="width:85%">
-                            <div class="progress-value">CSS3</div>
-                        </div>
-                    </div>
-                    <h3 class="progress-title"></h3>
-                    <div class="progress blue">
-                        <div class="progress-bar blue" style="width:90%">
-                            <div class="progress-value">HTML5</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div id="libraries" class="col-xs-10 col-xs-offset-1" data-aos="fade-up" data-aos-once="true">
-            <div class="progress-display">
-                <h2 class="progress-display-title">Libraries</h2>
-                <h3 class="progress-title"></h3>
-                <div class="progress blue">
-                    <div class="progress-bar blue" style="width:90%">
-                        <div class="progress-value">HTML</div>
-                    </div>
-                </div>
-                <h3 class="progress-title"></h3>
-                <div class="progress green">
-                    <div class="progress-bar green" style="width:85%">
-                        <div class="progress-value">CSS3</div>
-                    </div>
-                </div>
-                <h3 class="progress-title"></h3>
-                <div class="progress yellow">
-                    <div class="progress-bar yellow" style="width:75%">
-                        <div class="progress-value">JS</div>
-                    </div>
-                </div>
-                <h3 class="progress-title"></h3>
-                <div class="progress mint">
-                    <div class="progress-bar mint" style="width:65%">
-                        <div class="progress-value">SQL</div>
-                    </div>
-                </div>
-                <h3 class="progress-title"></h3>
-                <div class="progress pink">
-                    <div class="progress-bar pink" style="width:50%">
-                        <div class="progress-value">PHP</div>
-                    </div>
-                </div>
-            </div>
+  </div>
+  <div class="container-fluid text-center" id="projects">
+    <h1 class="title-color">Projects</h1>
+    <div class="row project-row" id="steam-achievement-project">
+      <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" 
+       class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./achievement-viewer.html"> <img class="project-img" src="img/Steam_icon_logo.svg" width="100%"> </a> </div>
+        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-8">
+          <div class="project-text text-left"> <a href="./achievement-viewer.html" class="btn btn-lg btn-transparent">Steam Achievements Viewer</a>
+            <h4>A visualization of steam achievements that utilizes Valve's API to access and display achievement data. </h4>
+            <h4 id="achievement-viewer-techstack">Created using <b>Bootstrap, JQuery, and PHP.</b></h4>
+          </div>
         </div>
-		</div>
+      </div>
     </div>
-</div>
-<div class="container-fluid text-center" id="animations">
-    <h1 data-aos="fade-up">Animations</h1>
-    <br>
-    <br>
-    <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-aos="slide-up"> 
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="vimeo">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/234190370" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="vimeo">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/234190755" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="vimeo">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="center-block" src="https://player.vimeo.com/video/231994281" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
+    <div class="row project-row" id="bathroomfinder-project" >
+      <div data-aos-anchor-placement="top-bottom" data-aos="slide-left" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0 col-sm-push-8 col-lg-push-8"> <a href="./bathroomfinder.php"> <img class="project-img" src="img/toilet-paper.svg" width="100%"> </a> </div>
+          <div class="col-xs-12 col-sm-8 col-sm-pull-3 col-lg-8">
+            <div class="project-text text-right"> <a href="./bathroomfinder.php" class="btn btn-lg btn-transparent">BathroomFinder</a>
+              <h4>A website that displays a google maps view of all bathrooms on Rowan's Glassboro campus, among other features. Includes support for signing in, rating bathrooms, and leaving comments. </h4>
+              <h4 id="bathroomfinder-techstack">Made possible by <b>Bootstrap, MySQL, PHP, and JQuery.</b></h4>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="row project-row" id="dropzonehq-project" >
+      <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./dropzone-HQ.html"><img class="project-img" src="img/parachute.svg" href="dropzone-HQ.html" width="100%"></a> </div>
+        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-8">
+          <div class="project-text text-left"> <a href="./dropzone-HQ.html" class="btn btn-lg btn-transparent">Dropzone HQ</a>
+            <h4>A web application for management of employees, inventory, and repairs at skydiving dropzones. In development as my undergraduate senior project. </h4>
+            <h4 id="dropzonehq-techstack">Built with <b>ReactJS, MySQL, AWS, and Django.</b></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center" id="animations">
+  <h1 data-aos="fade-up">Animations</h1>
+  
+  <br>
+  <br>
+  <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+   <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://player.vimeo.com/video/234190755" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+   
+  </div>
 </div>
 </div>
+
 <script src="libraries/js/jquery-1.11.3.min.js"></script> 
 <!-- Latest compiled and minified JavaScript --> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
@@ -220,27 +117,6 @@
 <script src="libraries/js/jquery.waypoints.min.js"></script> 
 <script type="text/javascript" src="libraries/js/slick.min.js"></script> 
 <script src="js/scrolling.js"></script> 
-<script src="https://use.fontawesome.com/978f7c3fc0.js"></script> 
-<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script> 
-<script>
-	
-  jQuery(document).ready(function($) {
-    
-    var $myCarousel = $("#myCarousel");
-$myCarousel.on("slide.bs.carousel", function (event) {
-	var $currentSlide = $myCarousel.find(".active iframe");
-	
-	// exit if there's no iframe, i.e. if this is just an image and not a video player
-	if (!$currentSlide.length) { return; }
-	
-	// pass that iframe into Froogaloop, and call api("pause") on it.
-	var player = Froogaloop($currentSlide[0]);
-	player.api("pause");
-});
-  });
-		  
-		
- 
-</script>
+<script src="https://use.fontawesome.com/978f7c3fc0.js"></script>
 </body>
 </html>
