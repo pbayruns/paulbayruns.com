@@ -38,15 +38,15 @@
     <div class="container col-sm-12 col-md-8 col-md-offset-2">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="index.html">Paul Bayruns</a> </div>
+        <a class="navbar-brand" href="/">Paul Bayruns</a> </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="./index.html">ABOUT ME</a></li>
+          <li><a href="./index">ABOUT ME</a></li>
           <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li class="active"><a class="active">BATHROOM FINDER</a></li>
-              <li><a href="achievement-viewer.html">ACHIEVEMENT VIEWER</a></li>
-              <li><a href="dropzone-HQ.html">DROPZONE HQ</a></li>
+              <li><a href="achievement-viewer">ACHIEVEMENT VIEWER</a></li>
+              <li><a href="dropzone-HQ">DROPZONE HQ</a></li>
             </ul>
           </li>
         </ul>
@@ -112,7 +112,7 @@
 	<div class="container-fluid">
 		<div class="row text-center" id="mapDisplay">
 			<div class="col-xs-10 col-xs-offset-1">
-				<h1>Rowan University Bathroomfinder</h1>
+				<h1>Rowan University Bathroom Finder</h1>
 				<h4>Click a mapmarker, then click a bathroom from the popup list to view its info.</h4>
 				<div id="mapViewToggle">
 					<button id="refreshMap" type="button" onClick="initialize()" class="btn btn-transparent map-button"> <span class="v-centered glyphicon glyphicon-refresh"></span>Refresh Map (clears selection)</button>
@@ -123,14 +123,14 @@
 			</div>
 		</div>
 		<div class="row text-center" id="filterOptions">
-			<div class="col-xs-10 col-xs-offset-1">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1">
 				<h3>Filter Bathrooms</h3>
 				<div id="filter-buttons">
 				<button id="filterToggle" type="button" onClick="applyFilter()" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-cog"></span>Apply Filters</button>
 				<button id="clearFilters" type="button" onClick="clearFilter()" class="btn btn-transparent filter-button"> <span class="v-centered glyphicon glyphicon-remove-sign"></span>Clear Filters</button>
 				</div>
 			</div>
-			<div class="col-xs-6 col-xs-offset-3">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
 			<form>
 			  <div class="input-group">
 					<span class="input-group-addon">Building</span>
@@ -211,7 +211,7 @@
 				<h4>Click a row in the list to display its info and comments in a popup.</h4>
 			</div>
 			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-				<div class="panel panel-default fillparentwidth fillparentheight" style="border-radius:10px">
+				<div id="bathroomsPanel" class="panel panel-default fillparentwidth fillparentheight" style="border-radius:10px">
 					<div class="panel-heading"> Bathrooms </div>
 					<div class="panel-body"> All bathrooms on campus matching the applied filter. </div>
 					<table class="table" id="bathroomsTable">

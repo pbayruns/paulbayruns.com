@@ -38,8 +38,10 @@ h3 {
 h3 {
 	font-size: 1.2em; /* 0.8x default size */
 }
+h1 {
+	font-size: 30px;
 }
-
+}
 /*
 *********************************
 *********************************
@@ -61,11 +63,7 @@ h3 {
 	color: #000;
 	background-color: #FFF;
 }
-.navbar-custom .navbar-nav > li > a:hover, 
-.navbar-custom .navbar-nav > li > a:focus, 
-.navbar-custom .navbar-nav > .active > a:hover, 
-.navbar-custom .navbar-nav > .active > a:focus, 
-.navbar-custom .navbar-nav > .open >a {
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus, .navbar-custom .navbar-nav > .open >a {
 	text-decoration: none;
 	color: #000;
 	background-color: #FFF;
@@ -193,7 +191,6 @@ h3 {
 	border: solid 5px #FFF;
 	animation: border-animation-in 0.1s ease-in;
 }
-
 #steam-achievement-project {
 	background-color: #0F1C30;
 	color: #FFF;
@@ -222,7 +219,6 @@ h3 {
 	padding-bottom: 100px;
 	color: #FFF;
 }
-
 /*
 *********************************
 *********************************
@@ -326,8 +322,7 @@ to {
 opacity:1;
 }
 }
-
-@keyframes border-animation-in {
+ @keyframes border-animation-in {
  0% {
  border-width: 0px;
 }
@@ -352,11 +347,6 @@ opacity:1;
 	margin-left: 25px;
 	color: #FFF;
 }
-
-
-
-
-
 .equal {
 	display: flex;
 	display: -webkit-flex;
@@ -384,9 +374,6 @@ opacity:1;
 .form-control {
 	width: 80%;
 }
-
-
-
 .about-me-panel {
 	background-color: #EF7442
 }
@@ -418,7 +405,16 @@ opacity:1;
 	align-self: center;
 }
 #steam-title-img {
-	margin: 25px;
+	margin: 25px 0px;
+	border: solid 0px #FFF;
+	border-radius: 50%;
+	animation: border-animation-out 0.1s ease-in;
+}
+#steam-title-img:hover{
+	margin: 25px 0px;
+	border: solid 5px #FFF;
+	border-radius: 50%;
+	animation: border-animation-in 0.1s ease-in;
 }
 .float-left {
 	float: left;
@@ -481,7 +477,6 @@ opacity:1;
 .tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
 	width: 100%;
 }
-
 /*
 *********************************
 *********************************
@@ -540,6 +535,13 @@ opacity:1;
 	color: #000;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+#bathroomsPanel{
+		overflow-x: auto;
+    white-space: nowrap;
+}
+#bathroomsTable{
+	overflow-x: scroll;
 }
 #comments {
 	background-color: #EAEBED;
