@@ -112,15 +112,17 @@
 	<div class="container-fluid">
 		<div class="row text-center" id="mapDisplay">
 			<div class="col-xs-10 col-xs-offset-1">
-				<h1>Rowan University Bathroom Finder</h1>
+				<h1 id="bathroomfinder-title">Rowan University Bathroom Finder</h1>
 				<h4>Click a mapmarker, then click a bathroom from the popup list to view its info.</h4>
-				<div id="mapViewToggle">
-					<button id="refreshMap" type="button" onClick="initialize()" class="btn btn-transparent map-button"> <span class="v-centered glyphicon glyphicon-refresh"></span>Refresh Map (clears selection)</button>
-				</div>
 			</div>
+			<div class="row">
 			<div class="col-xs-8 col-xs-offset-2" id="map_wrapper">
 				<div id="map_canvas" class="mapping"></div>
 			</div>
+			</div>
+			<div class ="row" id="mapViewToggle">
+					<button id="refreshMap" type="button" onClick="initialize()" class="btn btn-lg btn-transparent map-button"> <span class="v-centered glyphicon glyphicon-refresh"></span>Refresh Map (clears selection)</button>
+				</div>
 		</div>
 		<div class="row text-center" id="filterOptions">
 			<div class="col-xs-12 col-sm-10 col-sm-offset-1">

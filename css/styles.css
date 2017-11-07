@@ -49,6 +49,7 @@ h1 {
 *********************************
 *********************************
 */
+
 .navbar-custom {
 	background-color: #000;
 	border-radius: 0;
@@ -62,12 +63,30 @@ h1 {
 .navbar-custom .navbar-nav > .active > a {
 	color: #000;
 	background-color: #FFF;
+	
 }
 .navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus, .navbar-custom .navbar-nav > .open >a {
 	text-decoration: none;
 	color: #000;
-	background-color: #FFF;
+	background: #FFF;
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
 }
+.navbar-custom .navbar-nav .dropdown-menu>li>a, .navbar-custom .navbar-nav .dropdown-menu {
+	color: #FFF;
+	background: #000;
+}
+.navbar-custom .navbar-nav .dropdown-menu>li>a:hover {
+	color: #000;
+	background: #FFF;
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
+}
+
 .navbar-custom .navbar-brand {
 	color: #FFF;
 }
@@ -172,6 +191,15 @@ h1 {
 .project-text {
 	vertical-align: middle;
 }
+#achievement-viewer-btn:hover {
+	color: #0f1c30;
+}
+#bathroomfinder-btn:hover {
+	
+}
+#dropzonehq-btn:hover {
+	color: #fe4a49;
+}
 #achievement-viewer-techstack {
 	border-top: 2px solid #FFF;
 	padding-top: 10px;
@@ -205,19 +233,140 @@ h1 {
 }
 /**********ANIMATIONS**********/
 #animations {
-	background-color: #7DDF64;
-	padding-top: 50px;
-	padding-bottom: 100px;
-	color: #000;
-}
-#player {
-	margin: auto;
-}
-#skills {
-	background-color: #090809;
-	padding-top: 50px;
+	background-color: #0F0F0F;
+	padding-top: 15vh;
 	padding-bottom: 100px;
 	color: #FFF;
+}
+/*  VIDEO PLAYER CONTAINER
+ 		############################### */
+.vid-container {
+	position: relative;
+	padding-bottom: 52%;
+	padding-top: 30px;
+	height: 0;
+}
+.vid-container iframe,  .vid-container object,  .vid-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*  VIDEOS PLAYLIST 
+ 		############################### */
+.vid-list-container {
+	width: 92%;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-left: 4%;
+	padding-bottom: 20px;
+}
+.vid-list {
+	width: 1344px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.vid-item {
+	
+	-webkit-transition: background .1s ease-in-out;
+	-moz-transition: background .1s ease-in-out;
+	-o-transition: background .1s ease-in-out;
+	transition: background .1s ease-in-out;
+	display: block;
+	width: 148px;
+	height: 148px;
+	float: left;
+	margin: 0;
+	padding: 10px;
+}
+.thumb {
+	/*position: relative;*/
+	overflow: hidden;
+	height: 84px;
+}
+.thumb img {
+	width: 100%;
+	position: relative;
+	top: -13px;
+}
+.vid-item .desc {
+	color: #058ED9;
+	font-size: 15px;
+	margin-top: 5px;
+}
+.vid-item:hover .desc {
+	color: #FFF;
+	font-weight: 900;
+}
+
+.vid-item:hover {
+	background: #FE4A49;
+	cursor: pointer;
+}
+.arrows {
+	position: relative;
+	width: 100%;
+}
+.arrow-left {
+	
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
+	color: #fff;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	left: -25px;
+	top: -130px;
+	z-index: 99;
+	cursor: pointer;
+}
+.arrow-right {
+	
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
+	color: #fff;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	right: -25px;
+	top: -130px;
+	z-index: 100;
+	cursor: pointer;
+}
+.arrow-left:hover {
+	background: #FE4A49;
+}
+.arrow-right:hover {
+	background: #FE4A49;
+}
+
+@media (max-width: 624px) {
+.caption {
+	margin-top: 40px;
+}
+.vid-list-container {
+	padding-bottom: 20px;
+}
+/* reposition left/right arrows */
+.arrows {
+	position: relative;
+	margin: 0 auto;
+	width: 50%;
+}
+.arrow-left {
+	right: 52%;
+	top: -17px;
+}
+.arrow-right {
+	left: 52%;
+	top: -17px;
+}
 }
 /*
 *********************************
@@ -410,7 +559,7 @@ opacity:1;
 	border-radius: 50%;
 	animation: border-animation-out 0.1s ease-in;
 }
-#steam-title-img:hover{
+#steam-title-img:hover {
 	margin: 25px 0px;
 	border: solid 5px #FFF;
 	border-radius: 50%;
@@ -487,6 +636,10 @@ opacity:1;
 #bathroomfinder-wrapper {
 	font-family: "Open Sans", "sans-serif";
 }
+#bathroomfinder-title {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #FFF;
+}
 #bathroomfinder-intro {
 	background-color: #78B2D0;
 	padding-top: 100px;
@@ -498,6 +651,11 @@ opacity:1;
 	z-index: 8;
 	background-color: #058ed9;
 	color: #FFF;
+}
+.btn > .glyphicon {
+	margin-top: 5px;
+	margin-right: 7px;
+	align-content: center;
 }
 .map-button:hover {
 	color: #058ed9;
@@ -536,11 +694,11 @@ opacity:1;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-#bathroomsPanel{
-		overflow-x: auto;
-    white-space: nowrap;
+#bathroomsPanel {
+	overflow-x: auto;
+	white-space: nowrap;
 }
-#bathroomsTable{
+#bathroomsTable {
 	overflow-x: scroll;
 }
 #comments {
