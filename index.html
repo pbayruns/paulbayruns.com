@@ -20,136 +20,156 @@
 </head>
 <body>
 <div id="wrapper">
-  <nav class="navbar navbar-custom navbar-fixed-top">
-    <div class="container col-sm-12 col-md-8 col-md-offset-2">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="/">Paul Bayruns</a> </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a class="active">ABOUT ME</a></li>
-          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="bathroomfinder">BATHROOM FINDER</a></li>
-              <li><a href="achievement-viewer">ACHIEVEMENT VIEWER</a></li>
-              <li><a href="dropzone-HQ">DROPZONE HQ</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container-fluid text-center" id="intro">
-    <div class="col-sm-12 col-md-6 col-md-offset-3">
-      <h1 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Paul Bayruns</h1>
-      <br>
-      <img src="img/my head.svg" class="img-circle center-block" height="225px" width="225px" data-aos="fade-left" data-aos-duration="2000"><img>
-      <h3 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Rowan University</h3>
-      <div class="col-xs-12" id="nav-buttons" data-aos="fade-up" data-aos-once="true"> <a href="#about-me" class="intro-button btn btn-lg btn-transparent">About Me</a> <a href="#projects" class="intro-button btn btn-lg btn-transparent">Projects</a> <a href="#animations" class="intro-button btn btn-lg btn-transparent">Animations</a> </div>
-    </div>
-  </div>
-  <div class="container-fluid text-center" id="about-me">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-      <h1 data-aos="fade-down">About Me</h1>
-      <div class="col-xs-12  col-centered" data-aos="slide-up">
-        <h3> I'm a senior computer science major at Rowan University with an interest in full stack web development, web design, animation, and photography. </h3>
-        <div id="about-me-icons"><i class="fa fa-code fa-3x"></i> <i class="fa fa-database fa-3x"></i> <i class="fa fa-desktop fa-3x"></i><i class="fa fa-paint-brush fa-3x"></i><i class="fa fa-camera fa-3x"></i></div>
-        <h3>As secretary for The Rowan Arts Collective and senator for the Rowan ACM chapter, I enjoy the balance of web development's creative and technical aspects. </h3>
-        <br>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid text-center" id="projects">
-    <h1 class="title-color">Projects</h1>
-    <div class="row project-row" id="steam-achievement-project">
-      <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" 
-       class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./achievement-viewer.html"> <img class="project-img" src="img/Steam_icon_logo.svg" width="100%"> </a> </div>
-        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-8">
-          <div class="project-text text-left"> <a href="./achievement-viewer.html" id="achievement-viewer-btn" class="btn btn-lg btn-transparent">Steam Achievements Viewer</a>
-            <h4>A visualization of steam achievements that utilizes Valve's API to access and display achievement data. </h4>
-            <h4 id="achievement-viewer-techstack">Created using <b>Bootstrap, JQuery, and PHP.</b></h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row project-row" id="bathroomfinder-project" >
-      <div data-aos-anchor-placement="top-bottom" data-aos="slide-left" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0 col-sm-push-8 col-lg-push-8"> <a href="./bathroomfinder.php"> <img class="project-img" src="img/toilet-paper.svg" width="100%"> </a> </div>
-          <div class="col-xs-12 col-sm-8 col-sm-pull-3 col-lg-8">
-            <div class="project-text text-right"> <a href="./bathroomfinder.php" class="btn btn-lg btn-transparent">BathroomFinder</a>
-              <h4>A website that displays a google maps view of all bathrooms on Rowan's Glassboro campus, among other features. Includes support for signing in, rating bathrooms, and leaving comments. </h4>
-              <h4 id="bathroomfinder-techstack">Made possible by <b>Bootstrap, MySQL, PHP, and JQuery.</b></h4>
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container col-sm-12 col-md-8 col-md-offset-2">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="/">Paul Bayruns</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="active">ABOUT ME</a></li>
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bathroomfinder">BATHROOM FINDER</a></li>
+                            <li><a href="achievement-viewer">ACHIEVEMENT VIEWER</a></li>
+                            <li><a href="dropzone-HQ">DROPZONE HQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="row project-row" id="dropzonehq-project" >
-      <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./dropzone-HQ.html"><img class="project-img" src="img/parachute.svg" href="dropzone-HQ.html" width="100%"></a> </div>
-        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-8">
-          <div class="project-text text-left"> <a href="./dropzone-HQ.html"  id="dropzonehq-btn" class="btn btn-lg btn-transparent">Dropzone HQ</a>
-            <h4>A web application for management of employees, inventory, and repairs at skydiving dropzones. In development as my undergraduate senior project. </h4>
-            <h4 id="dropzonehq-techstack">Built with <b>ReactJS, MySQL, AWS, and Django.</b></h4>
-          </div>
+    </nav>
+    <div class="container-fluid text-center" id="intro">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <h1 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Paul Bayruns</h1>
+            <br>
+            <img src="img/my head.svg" class="img-circle center-block" height="225px" width="225px" data-aos="fade-left" data-aos-duration="2000"><img>
+            <h3 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Rowan University</h3>
+            <div class="col-xs-12" id="nav-buttons" data-aos="fade-up" data-aos-once="true"> <a href="#about-me" class="intro-button btn btn-lg btn-transparent">About Me</a> <a href="#projects" class="intro-button btn btn-lg btn-transparent">Projects</a> <a href="#animations" class="intro-button btn btn-lg btn-transparent">Animations</a> </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="container-fluid text-center" id="animations">
-    <h1 data-aos="fade-up">Animations</h1>
-    <br>
-    <br>
-    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-      <!-- THE YOUTUBE PLAYER -->
-      <div class="vid-container">
-        <iframe id="vid_frame" src="http://www.youtube.com/embed/X3EWpvfs8jc?rel=0&showinfo=0&autohide=1" frameborder="0" width="560" height="315"></iframe>
-      </div>
-      
-      <!-- THE PLAYLIST -->
-      <div class="vid-list-container">
-        <div class="vid-list">
-        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/X3EWpvfs8jc?autoplay=1&rel=0&showinfo=0&autohide=1'">
-            <div class="thumb"><img src="http://img.youtube.com/vi/X3EWpvfs8jc/0.jpg"></div>
-            <div class="desc">Snap</div>
-          </div>
-         <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/QcF74WkBgwc?autoplay=1&rel=0&showinfo=0&autohide=1'">
-            <div class="thumb"><img src="http://img.youtube.com/vi/QcF74WkBgwc/0.jpg"></div>
-            <div class="desc">Key Train</div>
-          </div>
-          <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yjsjDP0Y0No?autoplay=1&rel=0&showinfo=0&autohide=1'">
-            <div class="thumb"><img src="http://img.youtube.com/vi/yjsjDP0Y0No/0.jpg"></div>
-            <div class="desc">Sea Gang</div>
-          </div>
-          <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/8xxugMcHCxg?autoplay=1&rel=0&showinfo=0&autohide=1'">
-            <div class="thumb"><img src="http://img.youtube.com/vi/8xxugMcHCxg/0.jpg"></div>
-            <div class="desc">Paper Walk</div>
-          </div>
-          <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/HHFAAlwMqt8?autoplay=1&rel=0&showinfo=0&autohide=1'">
-            <div class="thumb"><img src="http://img.youtube.com/vi/HHFAAlwMqt8/0.jpg"></div>
-            <div class="desc">The Rowan Arts Collective Promo</div>
-          </div>
-          <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/euGgX3tH88A?autoplay=1&rel=0&showinfo=0&autohide=1'">
-            <div class="thumb"><img src="http://img.youtube.com/vi/euGgX3tH88A/0.jpg"></div>
-            <div class="desc">Float</div>
-          </div>
-          <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/Vd-fJXD2Nkc?autoplay=1&rel=0&showinfo=0&autohide=1'">
-            <div class="thumb"><img src="http://img.youtube.com/vi/Vd-fJXD2Nkc/0.jpg"></div>
-            <div class="desc">Rainy</div>
-          </div>
+    <div class="container-fluid text-center" id="about-me">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+            <h1 data-aos="fade-down">About Me</h1>
+            <div class="col-xs-12  col-centered" data-aos="slide-up">
+                <h3> I'm a senior computer science major at Rowan University with an interest in full stack web development, web design, animation, and photography. </h3>
+                <div class="icon-info-container">
+                    <h4 id="icon-title">Code</h4>
+                    <p id="icon-paragraph">Cortado pair programming parallax parallax ideate hacker grok. Fund sticky note Steve Jobs viral convergence 360 campaign integrate entrepreneur quantitative vs. qualitative physical computing integrate entrepreneur viral.</p>
+                </div>
+                <div class="icon-list-container">
+                    <div class="icon-list">
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text A';document.getElementById('icon-title').innerHTML='Code'"> Code<br><i class="fa fa-code fa-3x"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text B';document.getElementById('icon-title').innerHTML='Databases'"> Databases<br><i class="fa fa-database fa-3x"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text C';document.getElementById('icon-title').innerHTML='ACM'"> ACM<br><i class="fa fa-desktop fa-3x"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text D';document.getElementById('icon-title').innerHTML='TRAC'"> TRAC<br><i class="fa fa-paint-brush fa-3x"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text D';document.getElementById('icon-title').innerHTML='Animation'"> Animation<br><i class="fa fa-film fa-3x" aria-hidden="true"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text E';document.getElementById('icon-title').innerHTML='Photography'"> Photography<br><i class="fa fa-camera-retro fa-3x"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text F';document.getElementById('icon-title').innerHTML='ASL'"> ASL<br><i class="fa fa-sign-language fa-3x" aria-hidden="true"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text D';document.getElementById('icon-title').innerHTML='Camping'"> Camping<br><i class="fa fa-tree fa-3x" aria-hidden="true"></i> </div>
+                        <div class="icon-item" onClick="document.getElementById('icon-paragraph').innerHTML='Text D';document.getElementById('icon-title').innerHTML='Gaming'"> Gaming<br><i class="fa fa-gamepad fa-3x" aria-hidden="true"></i> </div>
+                    </div>
+                </div>
+                <!-- LEFT AND RIGHT ARROWS -->
+                <div class="icon-arrows">
+                    <div class="icon-arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                    <div class="icon-arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                </div>
+                <h3>As secretary for The Rowan Arts Collective and senator for the Rowan ACM chapter, I enjoy the balance of web development's creative and technical aspects. </h3>
+                <br>
+            </div>
         </div>
-      </div>
-      <!-- LEFT AND RIGHT ARROWS -->
-      <div class="arrows">
-        <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
-        <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
-      </div>
-      <div class="caption">Animations I have made with Adobe Aftereffects, Illustrator, Premiere, and Photoshop.</div>
-      
     </div>
-  </div>
+    <div class="container-fluid text-center" id="projects">
+        <h1 class="title-color">Projects</h1>
+        <div class="row project-row" id="steam-achievement-project">
+            <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" 
+       class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./achievement-viewer.html"> <img class="project-img" src="img/Steam_icon_logo.svg" width="100%"> </a> </div>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-8">
+                    <div class="project-text text-left"> <a href="./achievement-viewer.html" id="achievement-viewer-btn" class="btn btn-lg btn-transparent">Steam Achievements Viewer</a>
+                        <h4>A visualization of steam achievements that utilizes Valve's API to access and display achievement data. </h4>
+                        <h4 id="achievement-viewer-techstack">Created using <b>Bootstrap, JQuery, and PHP.</b></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row project-row" id="bathroomfinder-project" >
+            <div data-aos-anchor-placement="top-bottom" data-aos="slide-left" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0 col-sm-push-8 col-lg-push-8"> <a href="./bathroomfinder.php"> <img class="project-img" src="img/toilet-paper.svg" width="100%"> </a> </div>
+                    <div class="col-xs-12 col-sm-8 col-sm-pull-3 col-lg-8">
+                        <div class="project-text text-right"> <a href="./bathroomfinder.php" class="btn btn-lg btn-transparent">BathroomFinder</a>
+                            <h4>A website that displays a google maps view of all bathrooms on Rowan's Glassboro campus, among other features. Includes support for signing in, rating bathrooms, and leaving comments. </h4>
+                            <h4 id="bathroomfinder-techstack">Made possible by <b>Bootstrap, MySQL, PHP, and JQuery.</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row project-row" id="dropzonehq-project" >
+            <div data-aos-anchor-placement="top-bottom" data-aos="slide-right" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0"> <a href="./dropzone-HQ.html"><img class="project-img" src="img/parachute.svg" href="dropzone-HQ.html" width="100%"></a> </div>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-lg-8">
+                    <div class="project-text text-left"> <a href="./dropzone-HQ.html"  id="dropzonehq-btn" class="btn btn-lg btn-transparent">Dropzone HQ</a>
+                        <h4>A web application for management of employees, inventory, and repairs at skydiving dropzones. In development as my undergraduate senior project. </h4>
+                        <h4 id="dropzonehq-techstack">Built with <b>ReactJS, MySQL, AWS, and Django.</b></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center" id="animations">
+        <h1 data-aos="fade-up">Animations</h1>
+        <br>
+        <br>
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3"> 
+            <!-- THE YOUTUBE PLAYER -->
+            <div class="vid-container">
+                <iframe id="vid_frame" src="http://www.youtube.com/embed/X3EWpvfs8jc?rel=0&showinfo=0&autohide=1" frameborder="0" width="560" height="315"></iframe>
+            </div>
+            
+            <!-- THE PLAYLIST -->
+            <div class="vid-list-container">
+                <div class="vid-list">
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/X3EWpvfs8jc?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb"><img src="http://img.youtube.com/vi/X3EWpvfs8jc/0.jpg"></div>
+                        <div class="desc">Snap</div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/QcF74WkBgwc?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb"><img src="http://img.youtube.com/vi/QcF74WkBgwc/0.jpg"></div>
+                        <div class="desc">Key Train</div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yjsjDP0Y0No?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb"><img src="http://img.youtube.com/vi/yjsjDP0Y0No/0.jpg"></div>
+                        <div class="desc">Sea Gang</div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/8xxugMcHCxg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb"><img src="http://img.youtube.com/vi/8xxugMcHCxg/0.jpg"></div>
+                        <div class="desc">Paper Walk</div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/HHFAAlwMqt8?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb"><img src="http://img.youtube.com/vi/HHFAAlwMqt8/0.jpg"></div>
+                        <div class="desc">The Rowan Arts Collective Promo</div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/euGgX3tH88A?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb"><img src="http://img.youtube.com/vi/euGgX3tH88A/0.jpg"></div>
+                        <div class="desc">Float</div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/Vd-fJXD2Nkc?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb"><img src="http://img.youtube.com/vi/Vd-fJXD2Nkc/0.jpg"></div>
+                        <div class="desc">Rainy</div>
+                    </div>
+                </div>
+            </div>
+            <!-- LEFT AND RIGHT ARROWS -->
+            <div class="arrows">
+                <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+            </div>
+            <div class="caption">Animations I have made with Adobe Aftereffects, Illustrator, Premiere, and Photoshop.</div>
+        </div>
+    </div>
 </div>
 <script src="libraries/js/jquery-1.11.3.min.js"></script> 
 <!-- Latest compiled and minified JavaScript --> 
@@ -171,6 +191,18 @@
 		    $(".arrow-left").bind("click", function (event) {
 		        event.preventDefault();
 		        $(".vid-list-container").stop().animate({
+		            scrollLeft: "-=336"
+		        }, 750);
+		    });
+			$(".icon-arrow-right").bind("click", function (event) {
+		        event.preventDefault();
+		        $(".icon-list-container").stop().animate({
+		            scrollLeft: "+=336"
+		        }, 750);
+		    });
+		    $(".icon-arrow-left").bind("click", function (event) {
+		        event.preventDefault();
+		        $(".icon-list-container").stop().animate({
 		            scrollLeft: "-=336"
 		        }, 750);
 		    });
