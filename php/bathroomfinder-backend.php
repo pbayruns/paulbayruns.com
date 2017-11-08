@@ -15,7 +15,7 @@ function initConnection() {
 		$hostname = $_ENV["RDS_HOSTNAME"];
 		$username = $_ENV["RDS_USERNAME"];
 		$password = $_ENV["RDS_PASSWORD"];
-		$dbname = $_ENV["RDS_DB_NAME"];
+		$dbname = "bathroomfinder";
 	}else{
 		$hostname = 'localhost';
 		$username = 'root';
