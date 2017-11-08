@@ -17,11 +17,6 @@
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	<script src="js/scrolling.js"></script>
-	<script src="libraries/js/moment.min.js"></script>
-	<script src="libraries/js/bootstrap-timepicker.min.js"></script>
-	<link href="libraries/css/bootstrap-timepicker.min.css" rel="stylesheet"/>
-	<link href="libraries/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
-	<script src="libraries/js/star-rating.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<!-- Table Sorter Library -->

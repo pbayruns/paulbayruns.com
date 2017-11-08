@@ -157,10 +157,12 @@ h1 {
 	color: #FFF;
 }
 
-.icon-info-container{
+#icon-info-container{
 	border-top: 2px solid #FFF;
 	border-bottom: 2px solid #FFF;
-	padding: 5px 0px 15px 0px;
+	padding: 5px 0px 5px 0px;
+	height: auto;
+	overflow-y: hidden;
 }
 .icon-container {
 	position: relative;
@@ -178,12 +180,6 @@ h1 {
 
 /*  ICONS LIST
  		############################### */
-#icon-title{
-
-}
-#icon-paragraph{
-	height: 50px;
-}
 .icon-list-container::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
