@@ -131,12 +131,6 @@ function displayBR(brID) {
 			$('#cleanStars').val(parseInt(data[4]));
 			$('#crowdedStars').val(parseInt(data[5]));
 
-			$('.average-rating').rating('refresh', {
-				readonly: true,
-				showClear: false,
-				showCaption: false,
-				size: 'xs'
-			});
 			$('#bathroomInfoModal').modal('show');
 		}
 	});

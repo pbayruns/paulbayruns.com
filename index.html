@@ -44,7 +44,8 @@
       <h1 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Paul Bayruns</h1>
       <br>
       <img src="img/my head.svg" class="img-circle center-block" height="225px" width="225px" data-aos="fade-left" data-aos-duration="2000"><img>
-      <h3 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Rowan University</h3>
+      <h3 class="title-color" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Rowan University<br>
+	<a class="link-icon" href="https://github.com/pbayruns"><i class="fa fa-github fa-3x"></i></a></h3>
       <div class="col-xs-12" id="nav-buttons" data-aos="fade-up" data-aos-once="true"> <a href="#about-me" class="intro-button btn btn-lg btn-transparent">About Me</a> <a href="#projects" class="intro-button btn btn-lg btn-transparent">Projects</a> <a href="#animations" class="intro-button btn btn-lg btn-transparent">Animations</a> </div>
     </div>
   </div>
@@ -52,37 +53,31 @@
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
       <h1 data-aos="fade-down">About Me</h1>
       <div class="col-xs-12  col-centered" data-aos="slide-up">
-        <h3> I'm a senior computer science major at Rowan University with an interest in full stack web development, web design, animation, and photography. In developing these interests, I have gotten involved in student leadership as secretary for The Rowan Arts Collective and senator for Rowan ACM. </h3>
-        <div id="icon-info-container">
-          <h4 id="icon-title">My Interests</h4>
-          <p id="icon-paragraph">If you want to learn more about me, click one of the icons below.</p>
-        </div>
+       <p class="about-me-paragraph paragraph-top">I believe in the purpose and quality of the content I create. I'm seeking a web development position where I can work alongside others who feel the same, while also growing towards my long term goal of mastering full stack website/app creation.</p>
+        <p class="about-me-paragraph paragraph-bottom"> I'm eager to contribute my current web development knowledge and potential to a dev team, taking any feedback and critique I can get in order to improve. </p>
+        
+        <br>
+        <h2>Interests</h2>
+        
         <div class="icon-list-container">
           <div class="icon-list">
-            <div class="icon-item" onClick="updateInfoText('Code','I have programmed code in various languages and am writing this filler text to test the collapsing animation on this piece of my frontend bootstrap website user visual interface design graphic java C++ C#')">Code<br>
-              <i class="fa fa-code fa-3x"></i> </div>
-            <div class="icon-item" onClick="updateInfoText('Databases','Databases backend SQL body text python django senior project print lab website server amazon web services mysql databases class php')">Databases<br>
-              <i class="fa fa-database fa-3x"></i> </div>
-            <div class="icon-item" onClick="updateInfoText('Association for Computing Machinery','I joined Rowan\'s chapter of the Association for Computing Machinery my freshman year, then slowly got more involved. Now serving as the club senator for the second year in a row, I\'ve gotten to know some of Rowan\'s brightest computer science students and have worked with them in planning hackathons and other events. The club meetings and Slack have been a helpful place to learn CS news, especially in getting info about and exposure to different languages, libraries, and frameworks. Rowan ACM has given me a place to learn a wide variety of knowledge that cannot easily be covered in just a classroom setting.');">ACM<br>
-              <i class="fa fa-desktop fa-3x"></i> </div>
-            <div class="icon-item" onClick="updateInfoText('The Rowan Arts Collective','During my sophomore year I decided to check out a meeting for Rowan\'s art club on a whim. I loved it. Since then, I\'ve made a special place for TRAC in my life. Now in my third year of membership, I serve as the secretary, helping to manage our roster, plan our meetings, and make our events happen, including our annual juried art exhibit in Rowan\'s High Street Gallery. Through my involvement, I\'ve learned about a lot of the art world, photography, animation, and video editing, and have created a strong network of designers and visual artists along the way.');">TRAC<br>
-              <i class="fa fa-paint-brush fa-3x"></i> </div>
-            <div class="icon-item" onClick="updateInfoText('American Sign Language','When I spent my 2016 summer working in a 10 week human-computer interaction research program at the Rochester Institute of Tecnology (RIT) and the National Technical Institute for the Deaf (NTID), I learned a lot about deaf culture. I gained a lot of valuable experience and insight from that program, and have made an effort to preserve deaf culture\'s place in my life. Since then, I have been involved with the Rowan ASL club and am taking Rowan\'s newly offered sign language courses.');">ASL<br>
-              <i class="fa fa-sign-language fa-3x" aria-hidden="true"></i> </div>
-            <div class="icon-item" onClick="updateInfoText('Animation','Animation body text')">Animation<br>
-              <i class="fa fa-film fa-3x" aria-hidden="true"></i> </div>
-            <div class="icon-item" onClick="updateInfoText('Photography','Photography body text')">Photography<br>
-              <i class="fa fa-camera-retro fa-3x"></i></div>
-            <div class="icon-item" onClick="updateInfoText('Camping','Camping body text')">Camping<br>
+            <div class="icon-item icon-top icon-left" onClick="updateInfoText('Association for Computing Machinery','Now in my 2nd year as senator for Rowan\'s Association for Computing Machinery, I\'ve worked with some of Rowan\'s brightest CS students to plan hackathons and other events. My friends at ACM are always looking into new things and sharing bits and pieces that they find interesting. It\’s been a fun way to get exposed to different languages, libraries, and frameworks. Getting to know so many people in the CS department through ACM has presented me with a lot of opportunities and a greater sense of being at home on campus.');">ACM<br>
+              <i class="fa interest-icon fa-desktop fa-3x"></i> </div>
+            <div class="icon-item icon-top" onClick="updateInfoText('The Rowan Arts Collective','I’ve loved The Rowan Arts Collective ever since I decided to join it on a whim a few years back. Through TRAC, I’ve gotten more involved with the art department, strengthening my skills via photography, video, and web design classes. I’ve created a strong network of designers and visual artists, gladly accepting their critiques to help me improve along the way. I now serve as TRAC’s secretary, helping to plan our meetings and events, including TRAC’s annual juried art exhibit in Rowan’s High Street Gallery. TRAC has been a big part of my college experience, I couldn’t imagine Rowan without it.');">TRAC<br>
+              <i class="fa interest-icon fa-paint-brush fa-3x"></i> </div>
+            <div class="icon-item icon-top icon-right" onClick="updateInfoText('American Sign Language','In 2016, I spent my summer working in a 10 week human-computer interaction research program at the Rochester Institute of Technology and the National Technical Institute for the Deaf. I gained valuable experience and insight into deaf culture. Since then, I\’ve been involved with the Rowan ASL club and am taking Rowan\'s newly offered sign language courses. ASL is a very interesting language, and I\’m thankful that I got such an amazing chance to experience deaf culture.');">ASL<br>
+              <i class="fa interest-icon fa-sign-language fa-3x" aria-hidden="true"></i> </div>
+            <div class="icon-item icon-bottom icon-left" onClick="updateInfoText('Animation','Animation was something I got hooked on after I started messing around in Adobe Aftereffects. I ended up spending a ton of time on my own learning how to animate using it this summer. I put out a good number of animations and did a variety of animation basics, but there is definitely still a lot more that I want to learn. It’s a skill I’m working into my web development and design toolbox.')">Animation<br>
+              <i class="fa interest-icon fa-film fa-3x" aria-hidden="true"></i> </div>
+            <div class="icon-item icon-bottom" onClick="updateInfoText('Photography','Photography is a great hobby of mine. I love long exposure night shots, especially of suburban life. Last year one of my photos won me 3rd best in show in TRAC’s juried art exhibit, which I was pretty excited about. I’m starting to get into filming now, too.')">Photography<br>
+              <i class="fa interest-icon fa-camera-retro fa-3x"></i></div>
+            <div class="icon-item icon-bottom icon-right" onClick="updateInfoText('Camping','I’ve always enjoyed the outdoors, and I’ve spent a week or two on vacation in a state or national park almost every summer of my life, staying in either a tent or cabin each time. This past summer, my sister and I took a 10 day roadtrip out to colorado and stayed in campgrounds on our entire way out there. The storms on the great plains got a bit tense, but nothing beats the view from 12,000ft in Rocky Mountain National Park.')">Camping<br>
               <i class="fa fa-tree fa-3x" aria-hidden="true"></i> </div>
-            <div class="icon-item" onClick="updateInfoText('Gaming','Gaming body text')">Gaming<br>
-              <i class="fa fa-gamepad fa-3x" aria-hidden="true"></i> </div>
           </div>
         </div>
-        <!-- LEFT AND RIGHT ARROWS -->
-        <div class="icon-arrows">
-          <div class="icon-arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
-          <div class="icon-arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+        <div id="icon-info-container">
+          <h4 id="icon-title">If you want to learn more about me, click one of the icons above.</h4>
+          <p id="icon-paragraph"></p>
         </div>
       </div>
     </div>
@@ -176,7 +171,16 @@
       </div>
       <div class="caption">Animations I have made with Adobe Aftereffects, Illustrator, Premiere, and Photoshop.</div>
     </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+      <div class="col-xs-12  col-centered">
+        <div id="icon-info-container-calc">
+          <h4 id="icon-title-calc"></h4>
+          <p id="icon-paragraph-calc"></p>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="container-fluid text-center"> </div>
 </div>
 <script src="libraries/js/jquery-1.11.3.min.js"></script> 
 <!-- Latest compiled and minified JavaScript --> 
@@ -201,66 +205,57 @@ $(document).ready(function () {
 			scrollLeft: "-=336"
 		}, 750);
 	});
-	$(".icon-arrow-right").bind("click", function (event) {
-		event.preventDefault();
-		$(".icon-list-container").stop().animate({
-			scrollLeft: "+=336"
-		}, 750);
-	});
-	$(".icon-arrow-left").bind("click", function (event) {
-		event.preventDefault();
-		$(".icon-list-container").stop().animate({
-			scrollLeft: "-=336"
-		}, 750);
-	});
 });
 
-var infoTitle = $('#icon-title').click(updateInfoText);
-var infoParagraph = $('#icon-paragraph').click(updateInfoText);
-var infoDisplay = $('#icon-info-container').click(updateInfoText);
+//save references to the info display info to calculate
+var infoTitle = $('#icon-title');
+var infoParagraph = $('#icon-paragraph');
+var infoDisplay = $('#icon-info-container');
+//make copies of the 
+var infoTitleCalc = $('#icon-title-calc');
+var infoParagraphCalc = $('#icon-paragraph-calc');
+var infoDisplayCalc = $('#icon-info-container-calc');
+
+//update the info text and animate the height change
 function updateInfoText(title, text) {
 	
+	//if the clicked info is already displayed
+	//then fade the title in-out to indicate
 	if(infoTitle.text() === title)
 	{
-		var oldFontsize = 18; //infoTitle.css('font-size');
-		infoTitle.animate({
-		  fontSize: oldFontsize + 5 +'px'
-		}, 200, function(){
-			infoTitle.animate({fontSize: oldFontsize + 'px'}, 200);
-		} );
-		
-	}else{
-		
+		infoTitle.fadeTo(200, 0, function(){
+			infoTitle.fadeTo(200, 1);
+		});
+	}
+	//otherwise 
+	else{
+		//fade the text and title out
 		infoTitle.fadeTo(500, 0);
 		infoParagraph.fadeTo(500, 0, function(){
-
+			//then grab the current height
 			var oldHeight = infoDisplay.height();
-			infoTitle.text(title);
-			infoParagraph.text(text);
-			var newHeight = infoDisplay.height();
+			//update hidden calc div to calculate height
+			//with new text.
+			//Uses hidden div because updating div directly
+			//makes height jump to the height of the text
+			infoTitleCalc.text(title);
+			infoParagraphCalc.text(text);
+			infoDisplayCalc.height('auto');
+			var newHeight = infoDisplayCalc.outerHeight();
 			
+			//then animate to 0 height and back
 			infoDisplay.animate({height: 0}, 400, function() {
-				infoTitle.fadeTo(0, 1);
-				infoParagraph.fadeTo(0, 1, function(){
-					infoDisplay.animate({height: newHeight}, 400, function() {
-						infoDisplay.height('auto');
-			      
-					});
-				});
+				infoDisplay.animate({height: newHeight}, 400, function() {
+					infoTitle.text(title);
+					infoParagraph.text(text);
+			      	infoTitle.fadeTo(300, 1);
+					infoParagraph.fadeTo(300, 1);
+					infoDisplay.height('auto');
+				})
 			});
-			/*
-			/*
-			infoDisplay.animate({height: 40}, 300, function() {
-				infoTitle.fadeTo(200, 1);
-				infoParagraph.fadeTo(200, 1, function(){
-					infoDisplay.animate({height: newHeight}, 300, function() {
-						infoDisplay.height('auto');
-					});
-				});
-			});*/
 		});
 	}
 }
-  	</script>
+</script>
 </body>
 </html>
