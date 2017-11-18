@@ -15,6 +15,8 @@ body {
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
+/*Fix for bug of divs getting highlighted after AOS*/
+div { outline-style:none;}
 h1 {
 	font-size: 50px;
 }
@@ -170,10 +172,11 @@ h1 {
 .paragraph-bottom{
 	padding: 15px 0px;
 	margin-top: 20px;
-	border-top: 2px solid #FFF;
-	border-bottom: 2px solid #FFF;
+	border-top: 1px solid #FFF;
 }
-
+.about-me-paragraph{
+	text-align: left;
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.about-me-paragraph{
@@ -190,28 +193,27 @@ h1 {
 .interest-icon{
 	margin-top: 7px;
 }
+#icon-paragraph{
+	text-align: left;
+	text-indent: 30px;
+}
 #icon-info-container{
 	width: 100%;
-	border-top: 2px solid #FFF;
-	border-bottom: 2px solid #FFF;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
 	padding: 5px 0px 5px 0px;
 	height: auto;
 	overflow-y: hidden;
 }
 #icon-info-container-calc{
 	opacity: 0;
-	border-top: 2px solid rgba(0,0,0,0.00);
-	border-bottom: 2px solid rgba(0,0,0,0.00);;
+	border-top: 1px solid rgba(0,0,0,0.00);
+	border-bottom: 1px solid rgba(0,0,0,0.00);;
 	padding: 5px 0px 5px 0px;
 	height: auto;
 	overflow-y: hidden;
 }
 
-.icon-list-container {
-	margin-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 25px;
-}
 
 .icon-item {
 	-webkit-transition: background .2s ease-in-out;
@@ -236,6 +238,11 @@ h1 {
 	font-weight: 900;
 }
 
+
+.icon-list-container{
+	padding-top: 20px;
+	margin-bottom: 225px;
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.icon-item{
@@ -333,8 +340,8 @@ h1 {
 /**********ANIMATIONS**********/
 #animations {
 	background-color: #0F0F0F;
-	padding-top: 15vh;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 10px;
 	color: #FFF;
 }
 /*  VIDEO PLAYER CONTAINER
